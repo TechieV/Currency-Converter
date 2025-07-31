@@ -54,7 +54,7 @@ btn.addEventListener("click", async (evt) => {
   let data = await response.json();
   let rate = data.conversion_rates[toCurr];
   let finalAmount = (amtVal * rate).toFixed(2);
-  msg.innerText = `${amtVal} ${fromCurr} = ${finalAmount} ${toCurr}`;
+  msg.innerText = `${amtVal} ${countryData[fromCurr].currencyName} = ${finalAmount} ${countryData[toCurr].currencyName}`;
 });
 
 
