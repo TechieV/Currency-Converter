@@ -4,6 +4,13 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+body{
+  background-image: url(https://img.freepik.com/free-vector/digital-money-transfer-technology-background_1017-17454.jpg?t=st=1753939750~exp=1753943350~hmac=2eaf8be5317b2a87abf928115c3094ea4b47c8ea65ecd0b021fc4bf8451e2df7&w=1380);
+  background-size: cover;       
+  background-repeat: no-repeat; 
+  background-position: center;  
+
+}
 
 h1 {
   text-align: center;
@@ -12,7 +19,6 @@ h1 {
 
 main {
   height: 100vh;
-  background-color: #D8DDEF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,10 +28,16 @@ main {
   min-height: 60%;
   width: 30%;
   border-radius: 1rem;
-  background-color: #A0A4B8;
   padding: 2em;
   display: flex;
   flex-direction: column;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  color: #222;
+  z-index: 1;
 }
 
 form input,

@@ -1,6 +1,8 @@
 const dropdowns = document.querySelectorAll(".dropdowns select");
 const fromImg = document.querySelector(".fromImg");
 const toImg = document.querySelector(".toImg");
+const URL= "https://v6.exchangerate-api.com/v6//latest/USD"
+const key = "def2b0218f439805ecb1a88b"
 
 // 🧠 Populate dropdowns
 dropdowns.forEach((select, index) => {
@@ -21,4 +23,3 @@ dropdowns.forEach((select, index) => {
     img.src = `https://flagsapi.com/${select.value}/shiny/64.png`;
   });
 });
-
