@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
 }
 body {
   background-image: url(https://img.freepik.com/free-vector/digital-money-transfer-technology-background_1017-17454.jpg?t=st=1753939750~exp=1753943350~hmac=2eaf8be5317b2a87abf928115c3094ea4b47c8ea65ecd0b021fc4bf8451e2df7&w=1380);
@@ -47,7 +48,12 @@ form input,
   outline: none;
 }
 form input{
-  border: 2px solid grey;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-weight: 600;
+}
+::placeholder{
+  color: whitesmoke;
 }
 .dropdowns {
   margin-top: 3rem;
@@ -71,7 +77,12 @@ select {
   padding: 0 0.5rem;
   font-size: 1rem;
   border-radius: 0.5rem;
+  outline: none;
+  background: rgba(255,255,255,0.2);
   border: none;
+}
+select option{
+   color: black;
 }
 .flag-img {
   width: 70px;
@@ -95,12 +106,15 @@ select {
   margin-top: 2rem;
 }
 .btn {
-  background-color: #4a4e69;
+  background-color: #e68bbe;
   color: white;
   font-size: 1.1rem;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, opacity 0.25s;
 }
 .btn:hover {
+  opacity: 0.8;
+}
+.btn:active {
   background-color: #22223b;
 }

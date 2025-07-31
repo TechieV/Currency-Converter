@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <title>Currency Converter</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- FontAwesome for icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" />
 </head>
 <body>
   <main>
@@ -12,39 +13,31 @@
       <h1>Currency Converter</h1>
       <form>
         <div class="amount">
-          <input type="number" placeholder="Enter amount">
+          <input type="number" placeholder="Enter amount" id="amount" min="0">
         </div>
-
         <div class="dropdowns">
           <!-- From Section -->
           <div class="From">
             <h2>From</h2>
             <div class="select-container">
-              <select name="from" id="from">
-                <option value="AF">AFN</option>
-                <option value="AL">ALL</option>
-                <option value="US">USD</option>
-              </select>
-              <img class="flag-img fromImg" src="https://flagsapi.com/AU/shiny/64.png">
+              <select name="from" id="from"></select>
+              <img class="flag-img fromImg" src="https://flagsapi.com/US/shiny/64.png" alt="From Flag">
             </div>
+            <p class="from-country"></p>
           </div>
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
           <!-- To Section -->
           <div class="To">
             <h2>To</h2>
             <div class="select-container">
-              <select name="to" id="to">
-                <option value="IN">INR</option>
-                <option value="US">USD</option>
-                <option value="AF">AFN</option>
-              </select>
-              <img class="flag-img toImg" src="https://flagsapi.com/IN/shiny/64.png">
+              <select name="to" id="to"></select>
+              <img class="flag-img toImg" src="https://flagsapi.com/IN/shiny/64.png" alt="To Flag">
             </div>
+            <p class="to-country"></p>
           </div>
         </div>
-
         <div class="msg"><p>1 USD = 80 INR</p></div>
-        <div class="btnContainer"><button class="btn">Get Exchange</button></div>
+        <div class="btnContainer"><button class="btn" type="button">Get Exchange</button></div>
       </form>
     </div>
   </main>
